@@ -1,0 +1,5 @@
+# Preserve CSV bytes exactly; only normalize text formats.
+*.csv -text
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf

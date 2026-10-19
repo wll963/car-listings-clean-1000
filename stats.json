@@ -1,0 +1,107 @@
+{
+  "name": "car-listings-clean-1000",
+  "generatedAt": "2026-10-19",
+  "rows": 1000,
+  "columns": 26,
+  "duplicatePrimaryKeys": 0,
+  "firstSeenRange": [
+    "2025-10-01",
+    "2026-08-21"
+  ],
+  "ranges": {
+    "year": [
+      2000,
+      2026
+    ],
+    "mileage": [
+      12.0,
+      312618.0
+    ],
+    "onePrice": [
+      1380.0,
+      343280.0
+    ]
+  },
+  "topMakes": {
+    "Ford": 110,
+    "Toyota": 96,
+    "Subaru": 91,
+    "Chevrolet": 90,
+    "Honda": 88,
+    "BMW": 62,
+    "GMC": 51,
+    "Kia": 37,
+    "Mercedes-Benz": 34,
+    "Jeep": 33
+  },
+  "distributions": {
+    "bodyStyle": {
+      "SUV": 210,
+      "Sedan": 194,
+      "Pickup": 165,
+      "Wagon": 114,
+      "Coupe": 103,
+      "Hatchback": 90,
+      "Minivan": 71,
+      "Convertible": 32,
+      "Van": 20,
+      "Chassis": 1
+    },
+    "fuelType": {
+      "Gasoline": 794,
+      "Hybrid": 87,
+      "Diesel": 66,
+      "Electric": 32,
+      "Flexible-Fuel": 20,
+      "Alternative": 1
+    },
+    "drivetrain": {
+      "FWD": 310,
+      "AWD": 293,
+      "4WD": 230,
+      "RWD": 167
+    },
+    "transmission": {
+      "Automatic": 942,
+      "Manual": 53,
+      "Unspecified": 5
+    },
+    "vehicle_class": {
+      "SUV": 210,
+      "小轿车": 194,
+      "皮卡": 165,
+      "旅行车": 114,
+      "轿跑": 103,
+      "两厢车": 90,
+      "MPV": 71,
+      "敞篷车": 32,
+      "厢式车": 20,
+      "底盘车": 1
+    },
+    "energy_class": {
+      "燃油": 794,
+      "混动": 87,
+      "柴油": 66,
+      "纯电": 32,
+      "灵活燃料": 20,
+      "其他能源": 1
+    },
+    "category": {
+      "燃油SUV": 178,
+      "燃油小轿车": 147,
+      "燃油旅行车": 113,
+      "燃油轿跑": 97,
+      "燃油皮卡": 85,
+      "燃油两厢车": 71,
+      "柴油皮卡": 65,
+      "燃油MPV": 59,
+      "燃油敞篷车": 32,
+      "混动小轿车": 31,
+      "混动SUV": 25,
+      "纯电小轿车": 15,
+      "燃油厢式车": 11,
+      "混动MPV": 11,
+      "混动两厢车": 11
+    }
+  }
+}

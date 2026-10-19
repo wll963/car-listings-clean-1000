@@ -1,0 +1,184 @@
+[
+  {
+    "name": "_primaryKey",
+    "dtype": "string",
+    "description": "Unique record identifier (embedded VIN + dealer code + snapshot date).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 1000
+  },
+  {
+    "name": "firstSeen",
+    "dtype": "date",
+    "description": "Date when the listing was first observed (YYYY-MM-DD).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 75
+  },
+  {
+    "name": "year",
+    "dtype": "integer",
+    "description": "Vehicle model year.",
+    "fillRatePct": 100.0,
+    "uniqueValues": 25
+  },
+  {
+    "name": "make",
+    "dtype": "string",
+    "description": "Vehicle manufacturer (e.g., Ford, Toyota, BMW).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 40
+  },
+  {
+    "name": "model",
+    "dtype": "string",
+    "description": "Vehicle model name.",
+    "fillRatePct": 100.0,
+    "uniqueValues": 255
+  },
+  {
+    "name": "trim",
+    "dtype": "string",
+    "description": "Trim level (e.g., 330i, RS).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 235
+  },
+  {
+    "name": "bodyStyle",
+    "dtype": "string",
+    "description": "Body style (SUV, Sedan, Pickup, Wagon, Coupe, Hatchback, Minivan, Convertible, Van, Chassis).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 10
+  },
+  {
+    "name": "vehicle_class",
+    "dtype": "string",
+    "description": "Chinese body-style class derived from bodyStyle (e.g., 小轿车, SUV, 皮卡).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 10
+  },
+  {
+    "name": "engine",
+    "dtype": "string",
+    "description": "Engine configuration (e.g., 4 Cyl, 6 Cyl).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 7
+  },
+  {
+    "name": "displacement",
+    "dtype": "string",
+    "description": "Engine displacement (e.g., 2.0 L).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 41
+  },
+  {
+    "name": "drivetrain",
+    "dtype": "string",
+    "description": "Drivetrain (FWD, AWD, 4WD, RWD).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 4
+  },
+  {
+    "name": "transmission",
+    "dtype": "string",
+    "description": "Transmission type (Automatic, Manual, Unspecified).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 3
+  },
+  {
+    "name": "fuelType",
+    "dtype": "string",
+    "description": "Fuel type (Gasoline, Hybrid, Diesel, Electric, Flexible-Fuel, Alternative).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 6
+  },
+  {
+    "name": "energy_class",
+    "dtype": "string",
+    "description": "Chinese energy-source class derived from fuelType (e.g., 燃油, 混动, 纯电).",
+    "fillRatePct": 100.0,
+    "uniqueValues": 6
+  },
+  {
+    "name": "category",
+    "dtype": "string",
+    "description": "Combined Chinese category label: energy_class + vehicle_class.",
+    "fillRatePct": 100.0,
+    "uniqueValues": 33
+  },
+  {
+    "name": "mileage",
+    "dtype": "float",
+    "description": "Odometer reading in miles.",
+    "fillRatePct": 100.0,
+    "uniqueValues": 995
+  },
+  {
+    "name": "noAccidents",
+    "dtype": "boolean",
+    "description": "True when the listing reports no accidents. Missing values mean the information was not reported (non-null values are all True).",
+    "fillRatePct": 71.2,
+    "uniqueValues": 1
+  },
+  {
+    "name": "serviceRecords",
+    "dtype": "boolean",
+    "description": "True when service records are available. Missing values mean the information was not reported (non-null values are all True).",
+    "fillRatePct": 95.6,
+    "uniqueValues": 1
+  },
+  {
+    "name": "serviceRecordCount",
+    "dtype": "float",
+    "description": "Number of service history records.",
+    "fillRatePct": 100.0,
+    "uniqueValues": 50
+  },
+  {
+    "name": "personalUse",
+    "dtype": "boolean",
+    "description": "True when the vehicle is reported for personal use. Missing values mean the information was not reported (non-null values are all True).",
+    "fillRatePct": 73.0,
+    "uniqueValues": 1
+  },
+  {
+    "name": "oneOwner",
+    "dtype": "boolean",
+    "description": "True when the vehicle has a single owner. Missing values mean the information was not reported (non-null values are all True).",
+    "fillRatePct": 55.6,
+    "uniqueValues": 1
+  },
+  {
+    "name": "onePrice",
+    "dtype": "float",
+    "description": "CARFAX One Price estimate / asking price in USD.",
+    "fillRatePct": 100.0,
+    "uniqueValues": 929
+  },
+  {
+    "name": "badge",
+    "dtype": "string",
+    "description": "CARFAX value badge (GOOD, GREAT, FAIR).",
+    "fillRatePct": 68.0,
+    "uniqueValues": 3
+  },
+  {
+    "name": "snapshotDamageSeverity",
+    "dtype": "string",
+    "description": "Reported damage severity from the listing snapshot.",
+    "fillRatePct": 6.0,
+    "uniqueValues": 6
+  },
+  {
+    "name": "reliabilityBadge",
+    "dtype": "string",
+    "description": "Reliability badge (e.g., GOOD, AVERAGE).",
+    "fillRatePct": 26.8,
+    "uniqueValues": 2
+  },
+  {
+    "name": "reliabilityAvgCost",
+    "dtype": "float",
+    "description": "Average repair cost in USD.",
+    "fillRatePct": 26.8,
+    "uniqueValues": 45
+  }
+]
